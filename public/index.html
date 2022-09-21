@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="utf-8" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/crypto-js/3.1.2/rollups/aes.js"></script>
+    <script src="../src/App.js"></script>
+    <link rel="icon" href="./Group 1.png" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="theme-color" content="#000000" />
+    <meta
+      name="description"
+      content="Web site created using create-react-app"
+    />
+    <link rel="apple-touch-icon" href="%PUBLIC_URL%/logo192.png" />
+  
+    <link rel="manifest" href="%PUBLIC_URL%/manifest.json" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+
+    <style>
+      @import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+KR:wght@100;200;300;400;500;600;700&family=Noto+Sans+KR:wght@100;300;400;500;700&display=swap');
+      </style>
+
+    <title>HireVisa</title>
+  </head>
+  <body oncontextmenu='return false' onselectstart='return false' ondragstart='return false'>
+    <div id="lan">
+      <div id="kobutton">
+    <img id="ko" src="./free-icon-south-korea-330591.png"></div>
+    <div id="usbutton">
+    <img id="us" src="./free-icon-united-states-330459.png"></div>
+    <div id="cnbutton">
+    <img id="cn" src="./free-icon-china-330651.png"></div>
+    </div>
+    <img id="hirelogo" src='./Group 1.png'>
+    <script>
+      document.getElementById('kobutton').onclick = () => {
+        document.getElementById('root').style.display = 'none'
+        document.getElementById('KOroot').style.display = 'block'
+        document.getElementById('CNroot').style.display = 'none'
+      }
+      document.getElementById('usbutton').onclick = () => {
+        document.getElementById('root').style.display = 'block'
+        document.getElementById('KOroot').style.display = 'none'
+        document.getElementById('CNroot').style.display = 'none'
+      }
+      document.getElementById('cnbutton').onclick = () => {
+        document.getElementById('root').style.display = 'none'
+        document.getElementById('KOroot').style.display = 'none'
+        document.getElementById('CNroot').style.display = 'block'
+      }
+    </script>
+    <div id="root"></div>
+    <div id="KOroot" style="display: none;"></div>
+    <div id="CNroot" style="display: none;"></div>
+    <!--
+      This HTML file is a template.
+      If you open it directly in the browser, you will see an empty page.
+
+      You can add webfonts, meta tags, or analytics to this file.
+      The build step will place the bundled scripts into the <body> tag.
+
+      To begin the development, run `npm start` or `yarn start`.
+      To create a production bundle, use `npm run build` or `yarn build`.
+    -->
+  </body>
+</html>

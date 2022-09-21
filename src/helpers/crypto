@@ -1,0 +1,7 @@
+import CryptoJS, { enc } from 'crypto-js';
+
+const encrypt = (data, key) => {
+  return CryptoJS.AES.encrypt(JSON.stringify(data), key).toString();
+};
+
+export default encrypt
